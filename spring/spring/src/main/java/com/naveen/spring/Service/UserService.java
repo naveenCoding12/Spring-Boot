@@ -18,7 +18,7 @@ public class UserService {
   public String save(UserVo userVo) {
 
     User user = new User();
-    user.setUserName(userVo.getUserName());
+    user.setUsername(userVo.getUsername());
     user.setPassword(userVo.getPassword());
 
     userRepo.save(user);
