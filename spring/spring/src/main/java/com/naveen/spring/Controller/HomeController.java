@@ -22,7 +22,16 @@ public class HomeController {
 
   @GetMapping("/home")
   public String home() {
-    return "index";
+    return "home.html";
+  }
+
+  @GetMapping("/login")
+  public String login(){
+    return "login.html";
+  }
+  @GetMapping("logout")
+  public String logout(){
+    return "logout.html";
   }
 
   @PostMapping("/save")
